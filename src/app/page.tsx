@@ -1,24 +1,25 @@
 "use client";
 
 import React from 'react';
-import FormContainer from './program-code/containers/FormContainer';
-import PalindromeContainer from './program-code/containers/PalindromeContainer';
+import PalindromicFinder from './FirstProgram/containers/PalindromicFinder';
+import PalindromicFinder2 from './SecondProgram/containers/PalindromicContainer2';
 
 const Page: React.FC = () => {
   return (
     <div>
       <div style={{ marginBottom: '1.5rem' }}>
-        <h1>Form Page</h1>
+        <h1>PalindromicFinder 1 </h1>
       </div> 
       <div>
-      <FormContainer />
-      </div>
+      <PalindromicFinder />
+      </div> 
+      <div style={{ marginBottom: '1.5rem' }}></div>
       <div style={{ marginBottom: '1.5rem' }}>
-        <h1>Palindrome</h1>
+        <h1>PalindromicFinder 2 </h1>
       </div> 
       <div>
-      <PalindromeContainer />
-      </div>
+      <PalindromicFinder2 />
+      </div> 
     </div>
   );
 };

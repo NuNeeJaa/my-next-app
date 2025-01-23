@@ -17,11 +17,10 @@ const config: Config = {
     coverageDirectory: 'coverage', 
     coverageProvider: 'v8', // ใช้ v8 แทน babel
     collectCoverageFrom: [   
-        '<rootDir>/src/app/program-code/hooks/**/*.{ts,tsx}',
-        '!<rootDir>/src/app/program-code/hooks/**/__tests__/**',
-        '!<rootDir>/src/app/program-code/hooks/**/**/__tests__/**',
-        '!<rootDir>/src/app/program-code/hooks/**/mocks/**',
-        '!<rootDir>/src/app/program-code/hooks/**/types/**',
+        '<rootDir>/src/app/**/hooks/**/*.{ts,tsx}', 
+        '!<rootDir>/src/app/**/hooks/**/__tests__/**', 
+        '!<rootDir>/src/app/**/hooks/**/mocks/**',
+        '!<rootDir>/src/app/**/hooks/**/types/**',
     ],
 };
 
